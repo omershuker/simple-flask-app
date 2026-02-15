@@ -1,10 +1,9 @@
 from flask import Flask
-
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-    return {"message": "Hello, Dockerized Flask App!"}
+def hello():
+    return {"message": "Hello, Flask CI!"}
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
